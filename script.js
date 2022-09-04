@@ -1,8 +1,27 @@
 const button = document.querySelector("header button");
 const body = document.querySelector("body");
+let theme = localStorage.getItem("theme"); //light
 
-console.log(button);
+if (theme === "dark") {
+    body.classList.add("dark")
+};
 
 button.addEventListener("click", () => {
-    body.classList.toggle("dark");
-})
+   
+    if (theme === "dark") {
+        body.classList.remove("dark");
+        theme = "";
+    } else {
+        body.classList.add("dark");
+        theme = "dark"
+    }
+    localStorage.setItem("theme", theme);
+});
+
+
+
+
+
+
+
+

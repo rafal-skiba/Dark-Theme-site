@@ -17,7 +17,7 @@ body {
     background-color: var(--color-background);
     font-family: Helvetica, sans-serif;
     margin: 0 auto;
-    width: 90vw;
+    width: 75vw;
     height: 100vh;
     overflow: hidden;
 
@@ -154,8 +154,10 @@ main p {
 }
 
 .dark .shop-button {
-    color: var(--color-dark);
+    color: var(--color-main);
+    background-color: var(--color-background);
 }
+
 
 .dark .shop-button:hover {
     color: var(--color-main);
@@ -181,4 +183,7 @@ main p {
 .dark .icon:hover {
     background-color: gold;
 }
+
+
+
 
