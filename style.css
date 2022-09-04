@@ -1,0 +1,184 @@
+:root {
+    --color-background: #fff;
+    --color-main: #000;
+    --color-background-dark: #000;
+    --color-dark: #fff;
+    --color-icon:rgb(0, 0, 0);
+}
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--color-background);
+    font-family: Helvetica, sans-serif;
+    margin: 0 auto;
+    width: 90vw;
+    height: 100vh;
+    overflow: hidden;
+
+}
+
+
+
+header {
+display: flex;
+justify-content: space-between;
+align-items: center;
+margin: 10vh 8vw;
+}
+
+header h1 {
+    margin-left: 0px;
+    font-size: 48px;
+    text-transform: uppercase;
+}
+
+header button {
+    background-color: var(--color-background);
+    border: 2px solid var(--color-main);
+    border-radius: 10px;
+    cursor: pointer;
+    height: 100px;
+    width: 200px;
+    outline-width: 5px;
+}
+
+.icon {
+    background-color: var(--color-icon);
+    border-radius: 100%;
+    display: block;
+    height: 50px;
+    width: 50px;
+    margin: 15px 25px;
+    position: relative;
+    transition: background-color 0.5s, transform 0.5s;
+}
+
+span {
+    bottom: 100%;
+    color: var(--color-main);
+    font-size: 18px;
+    text-transform: uppercase;
+
+    
+}
+
+main {
+    display: flex;
+    justify-content: space-around;
+    margin: 5vh 10vh;
+}
+
+.text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+    width: 30vw;
+}
+
+
+
+.text-container p {
+    font-size: 28px;
+    margin-bottom: 50px;
+}
+
+
+.shop-button {
+    background: var(--color-main);
+    border: none;
+    border-radius: 10px;
+    height: 100px;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+    text-transform: uppercase;
+    
+}
+
+.shop-button:hover {
+    background-color: rgb(24, 75, 117);
+}
+
+.img-container {
+    width: 60vw;  
+}
+
+
+.picture {
+    display: flex;
+    justify-content: center;
+}
+img {
+    border-radius: 100%;
+    border: 5px solid var(--color-main);
+    width: 100%;
+}
+
+
+main p {
+    margin-bottom: 20px;
+}
+
+
+
+.dark {
+    background-color: var(--color-background-dark);
+    color: var(--color-dark);
+}
+
+.dark .icon {
+    background-color: gold;
+    transform: translateX(80px);
+    
+}
+
+.dark button {
+    background-color: var(--color-background-dark);
+    border: solid 2px var(--color-dark);
+   
+}
+
+.dark span {
+    color: var(--color-dark);
+}
+
+
+.dark img {
+    border: 5px solid var(--color-dark);
+}
+
+.dark .shop-button {
+    color: var(--color-dark);
+}
+
+.dark .shop-button:hover {
+    color: var(--color-main);
+    background-color: var(--color-background);
+}
+
+.dark .icon::after {
+    content: "";
+    background-color: #000;
+    display: block;
+    height: 50px;
+    width: 40px;
+    border-radius: 100%;
+    position: absolute;
+    left: -3px;
+    
+}
+
+.icon:hover {
+    background-color: rgb(24, 75, 117);
+}
+
+.dark .icon:hover {
+    background-color: gold;
+}
+
